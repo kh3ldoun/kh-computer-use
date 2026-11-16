@@ -1,0 +1,28 @@
+{
+  "name": "kh-computer-use",
+  "version": "0.1.0",
+  "description": "Original Windows desktop tools over MCP for Codex, Claude and Cursor",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "kh-computer-use": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "desktop.ps1",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^4.6.7"
+  }
+}
